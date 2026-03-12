@@ -176,17 +176,12 @@ const name = (nameInput.value||"").trim()
 
 if(name){
 
-ctx.font = `800 ${NAME_FONT_PX}px Georgia`
+ctx.font = `${NAME_FONT_PX}px Georgia`
 ctx.fillStyle = "#000000"
 ctx.textAlign = "center"
 ctx.textBaseline = "middle"
 
-ctx.shadowColor = "rgba(0,0,0,0.55)"
-ctx.shadowBlur = 10
-
 ctx.fillText(name,W/2,NAME_Y)
-
-ctx.shadowBlur = 0
 
 }
 
@@ -246,6 +241,7 @@ initPoster()
 
 </body>
 </html>
+
 
 
 
